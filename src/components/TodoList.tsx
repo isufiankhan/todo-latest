@@ -30,7 +30,7 @@ const TodoList = async () => {
         <div className="h-[400px] max-h-[400px] overflow-auto mb-4 scrollbar-thumb-primary  scrollbar-track-transparent scrollbar-thin scrollbar-thumb-rounded-full">
             {res.data.map((items) => {
                 return (
-                    <div className="bg-gray-100 py-4 px-4 flex items-center rounded-lg gap-x-3 my-3">
+                    <div className="bg-gray-100 py-4 px-4 flex items-center rounded-lg gap-x-3 my-3" key={items.id}>
                         <div className="h-3 w-3 bg-secondary rounded-full"></div>
                         <p className="text-lg font-medium">{items.task}</p>
                     </div>)
